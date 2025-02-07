@@ -18,9 +18,6 @@ app.use(cors())
 import bookRoute from "./routes/book.route.js"
 import SignupRoute from "./routes/User.route.js"
 
-app.get("/",(req,res)=>{
-    res.send("Hello from the server");
- });
 
 app.use("/book", bookRoute);
 app.use("/user", SignupRoute);
